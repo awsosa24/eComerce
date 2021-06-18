@@ -17,7 +17,7 @@ class ProductSerializer(serializers.ModelSerializer):
 
 class OrderDetailSerializer(serializers.ModelSerializer):
 	order = serializers.PrimaryKeyRelatedField(queryset=Order.objects.all(), required=False)
-	#product = serializers.PrimaryKeyRelatedField(queryset=Product.objects.all())
+	#product = serializers.PrimaryKeyRelatedField(queryset=Product.objects.all()
 	class Meta:
 		model = OrderDetail
 		fields = [
